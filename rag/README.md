@@ -15,7 +15,7 @@ cp .env.example .env
 # Edit .env with your OpenAI API key
 
 # Run the API
-poetry run python src/main.py
+poetry run rag-solution
 ```
 
 ## Features
