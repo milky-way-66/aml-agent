@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "aml-agent"
+version = "0.1.0"
+description = "Agentic AML Detection Application"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langgraph = "^0.0.15"
+typer = "0.7.0"
+rich = "^13.6.0"
+prompt-toolkit = "^3.0.41"
+httpx = "^0.25.1"
+pydantic = "^2.5.1"
+langchain = "^0.0.335"
+langchain-openai = "^0.0.2"
+click = "8.0.4"
+anthropic = "^0.54.0"
+dotenv = "^0.9.9"
+pydantic-settings = "^2.9.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.11.0"
+isort = "^5.12.0"
+mypy = "^1.7.0"
+
+[tool.poetry.scripts]
+aml-agent = "aml_agent.ui.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "rag-solution"
+version = "0.1.0"
+description = "Retrieval-Augmented Generation system for document search"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.115.9"
+uvicorn = "^0.23.2"
+langchain = "^0.0.312"
+openai = "^0.28.1"
+pypdf = "^3.16.0"
+python-docx = "^1.0.0"
+python-multipart = "^0.0.6"
+tiktoken = "^0.5.1"
+pydantic = "^2.4.2"
+python-dotenv = "^1.0.0"
+httpx = "^0.28.1"
+unstructured = "^0.17.2"
+markdown = "^3.8"
+chromadb = "^1.0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+black = "^23.10.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+pytest-asyncio = "^0.21.1"
+
+[tool.poetry.scripts]
+rag-solution = "src.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
